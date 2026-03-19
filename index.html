@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Преподавательский состав</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header class="header" id="top"> 
+        <a href="#" class="back-btn">
+            <img src="back.png" alt="Назад">
+        </a>
+        <nav class="nav-menu">
+            <a href="#">Главная</a>
+            <a href="#">Студентам</a>
+            <a href="#">Документы</a>
+            <a href="#">Абитуриенту</a>
+            <a href="#">Контакты</a>
+            <a href="#">Профессионалы</a>
+        </nav>
+    </header>
+    <main class="hero-section">
+        <div class="blue-rect">
+            <img src="TSPK.png" alt="Фоновый логотип" class="bg-logo">
+            <div class="content">
+                <p class="intro-text">
+                    Для того, чтобы Вы могли быть уверены в качестве своего образования и профессионализме будущих менторов, мы предлагаем Вам познакомиться!
+                </p>
+                <h1 class="main-title">Наш преподавательский состав</h1>
+            </div>
+        </div>
+    </main>
+<section class="info-banner">
+    <div class="banner-img">
+        <img src="college.jpg" alt="Здание колледжа">
+    </div>
+    <div class="banner-dark-text">
+        <p>Это люди, которые не просто учат теории, а делятся реальным опытом из индустрии</p>
+    </div>
+</section>
+<div class="filter-area">
+    <a href="javascript:void(0)" class="filter-btn">
+        Направление ИСиП 
+         <img src="down.png" alt="v" class="filter-arrow-icon">
+    </a>
+</div>
+<div class="teachers-grid">
+    <div class="teacher-card" onclick="openTeacherModal()">
+        <div class="avatar-circle"><img src="avatar.png" alt="фото"></div>
+        <h3 class="teacher-name">Иванов Иван Иванович</h3>
+        <p class="teacher-post">Ведущий преподаватель отделения Информационных технологий</p>
+    </div>
+    <div class="teacher-card" onclick="openTeacherModal()">
+        <div class="avatar-circle"><img src="avatar.png" alt="фото"></div>
+        <h3 class="teacher-name">Иванов Иван Иванович</h3>
+        <p class="teacher-post">Ведущий преподаватель отделения Информационных технологий</p>
+    </div>
+    <div class="teacher-card" onclick="openTeacherModal()">
+        <div class="avatar-circle"><img src="avatar.png" alt="фото"></div>
+        <h3 class="teacher-name">Иванов Иван Иванович</h3>
+        <p class="teacher-post">Ведущий преподаватель отделения Информационных технологий</p>
+    </div>
+    <div class="teacher-card" onclick="openTeacherModal()">
+        <div class="avatar-circle"><img src="avatar.png" alt="фото"></div>
+        <h3 class="teacher-name">Иванов Иван Иванович</h3>
+        <p class="teacher-post">Ведущий преподаватель отделения Информационных технологий</p>
+    </div>
+    <div class="teacher-card" onclick="openTeacherModal()">
+        <div class="avatar-circle"><img src="avatar.png" alt="фото"></div>
+        <h3 class="teacher-name">Иванов Иван Иванович</h3>
+        <p class="teacher-post">Ведущий преподаватель отделения Информационных технологий</p>
+    </div>
+    <div class="teacher-card" onclick="openTeacherModal()">
+        <div class="avatar-circle"><img src="avatar.png" alt="фото"></div>
+        <h3 class="teacher-name">Иванов Иван Иванович</h3>
+        <p class="teacher-post">Ведущий преподаватель отделения Информационных технологий</p>
+    </div>
+    <div class="teacher-card" onclick="openTeacherModal()">
+        <div class="avatar-circle"><img src="avatar.png" alt="фото"></div>
+        <h3 class="teacher-name">Иванов Иван Иванович</h3>
+        <p class="teacher-post">Ведущий преподаватель отделения Информационных технологий</p>
+    </div>
+    <div class="teacher-card" onclick="openTeacherModal()">
+        <div class="avatar-circle"><img src="avatar.png" alt="фото"></div>
+        <h3 class="teacher-name">Иванов Иван Иванович</h3>
+        <p class="teacher-post">Ведущий преподаватель отделения Информационных технологий</p>
+    </div>
+</div>
+<div class="bottom-area">
+    <a href="#top" class="back-to-top">Вернуться в начало</a>
+</div>
+<div id="teacher-overlay" class="overlay" onclick="closeTeacherModal()"></div>
+<div id="teacher-modal" class="teacher-detail-modal">
+    <img src="close.png" class="close-modal-btn" onclick="closeTeacherModal()" alt="закрыть">
+    <div class="modal-header">
+        <div class="avatar-big">
+            <img src="avatar.png" alt="фото">
+        </div>
+        
+        <div class="name-titles">
+            <div class="oval-box">Иванов Иван Иванович</div>
+            <div class="oval-box secondary">Ведущий преподаватель отделения Информационных технологий</div>
+        </div>
+
+        <div class="stats-boxes">
+            <div class="stat-card">
+                <strong>Стаж работы в ТСПК</strong><br>12 лет
+            </div>
+            <div class="stat-card">
+                <strong>Общий стаж</strong><br>22 года
+            </div>
+        </div>
+    </div>
+    <div class="modal-columns">
+        <div class="column-left">
+            <div class="info-card">
+                <strong>Уровень образования</strong>
+                <p>Высшее профессиональное (Магистр). Окончил Национальный исследовательский университет ИТМО по специальности «Прикладная математика и информатика».</p>
+            </div>
+            <div class="info-card">
+                <strong>Квалификация</strong>
+                <p>Математик-программист, системный аналитик</p>
+            </div>
+            <div class="info-card">
+                <strong>Ученая степень</strong>
+                <p>Кандидат технических наук</p>
+            </div>
+            <div class="info-card">
+                <strong>Ученое звание</strong>
+                <p>Доцент по кафедре информационных систем</p>
+            </div>
+        </div>
+        <div class="column-right">
+            <div class="info-card long">
+                <strong>Преподаваемые учебные предметы</strong>
+                <ul>
+                    <li>Дискретная математика;</li>
+                    <li>Элементы высшей математики;</li>
+                    <li>Основы алгоритмизации и программирования;</li>
+                    <li>Математическое моделирование;</li>
+                    <li>Теория вероятностей и математическая статистика</li>
+                </ul>
+            </div>
+            <div class="info-card long">
+                <strong>Профессиональное кредо</strong>
+                <p>«Программирование — это прикладная математика в действии. Я учу студентов не просто писать код, а понимать логику и алгоритмы, которые стоят за каждой строчкой»</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openTeacherModal() {
+        document.getElementById('teacher-modal').style.display = 'block';
+        document.getElementById('teacher-overlay').style.display = 'block';
+    }
+    function closeTeacherModal() {
+        document.getElementById('teacher-modal').style.display = 'none';
+        document.getElementById('teacher-overlay').style.display = 'none';
+    }
+</script>
